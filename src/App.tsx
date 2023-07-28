@@ -1,11 +1,13 @@
-import Header from "./components/Header";
-import CatVideo from "./components/catVideo";
+import CatVideo from "./components/CatVideo";
+import CatsInfo from "./components/CatsInfo";
 
 function App() {
   return (
     <>
-      <Header />
-      <CatVideo />
+      <div className="flex items-center justify-center h-[100dvh]">
+        <CatVideo />
+        <CatsInfo />
+      </div>
     </>
   );
 }

@@ -8,8 +8,43 @@
   box-sizing: border-box;
 }
 
-header {
-  background-image: linear-gradient(to right, #eee514, #c8df00, #a0d900, #72d200, #2dca05);
+.cat-info {
+  background-image: url(./assets/mesh-276.png);
 }
 
+.love-cat {
+  color: #050505;
+  animation: glow 1000ms infinite alternate;
+  transform: rotate(-50deg);
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #1877f2, 0 0 20px #1459b3, 0 0 30px #179bff;
+    
+  }
+  to {
+    text-shadow: 0 0 5px #1877f2, 0 0 10px #1459b3, 0 0 15px #179bff;
+  }
+}
 
