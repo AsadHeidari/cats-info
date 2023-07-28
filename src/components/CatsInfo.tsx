@@ -13,7 +13,7 @@ function CatsInfo() {
   const cats = useFetch("https://api.thecatapi.com/v1/images/search?limit=10");
 
   return (
-    <div className="h-3/5 w-1/2 bg-orange-300 cat-info rounded-3xl p-8 shadow-md">
+    <div className="h-3/5 w-[500px] mx-8 md:w-1/2 cat-info rounded-3xl p-8 shadow-md">
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
